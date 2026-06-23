@@ -45,6 +45,7 @@ background:linear-gradient(45deg,#ff00ff,#ff8c00);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 text-shadow:0 0 30px #ff00ff;
+  animation:logoPulse 1.2s infinite alternate;
 }
 
 .logo-sub{
@@ -59,7 +60,16 @@ opacity:0;
 visibility:hidden;
 }
 }
-
+@keyframes logoPulse{
+  from{
+    transform:scale(1);
+    text-shadow:0 0 20px #ff00ff;
+  }
+  to{
+    transform:scale(1.15);
+    text-shadow:0 0 60px #ff00ff;
+  }
+}
 .hero{
 min-height:100vh;
 display:flex;
