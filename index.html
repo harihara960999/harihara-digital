@@ -3,81 +3,150 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HariHara Digital</title>
+
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#4f46e5,#06b6d4);
+}
+
+body{
+background:#090909;
 color:white;
-text-align:center;
 }
+
 .hero{
-padding:60px 20px;
+padding:80px 20px;
+text-align:center;
+background:linear-gradient(135deg,#120018,#3f0071);
 }
-h1{
-font-size:42px;
-margin-bottom:10px;
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
 }
-p{
+
+.hero span{
+color:#c86cff;
+}
+
+.hero p{
 font-size:18px;
+max-width:700px;
+margin:auto;
+line-height:1.7;
 }
+
 .btn{
 display:inline-block;
-padding:15px 30px;
-background:#25D366;
+margin-top:30px;
+padding:16px 35px;
+background:#b400ff;
 color:white;
 text-decoration:none;
-border-radius:30px;
+border-radius:50px;
 font-weight:bold;
-margin-top:20px;
+font-size:18px;
 }
-.services{
-background:white;
-color:black;
-padding:40px 20px;
+
+.section{
+padding:60px 20px;
+text-align:center;
 }
+
+.section h2{
+font-size:38px;
+margin-bottom:30px;
+}
+
 .card{
-background:#f5f5f5;
-padding:20px;
-margin:15px;
-border-radius:15px;
+background:#151515;
+border:1px solid #7b2cff;
+border-radius:20px;
+padding:25px;
+margin:15px auto;
+max-width:400px;
 }
-.footer{
-padding:30px;
+
+.price{
+font-size:40px;
+color:#d580ff;
+font-weight:bold;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
 }
 </style>
+
 </head>
+
 <body>
 
-<div class="hero">
-<h1>HariHara Digital</h1>
-<p>Professional Websites for Businesses</p>
-<a class="btn" href="https://wa.me/918333847909">WhatsApp Us</a>
-</div>
+<section class="hero">
+<h1>HariHara <span>Digital</span></h1>
 
-<div class="services">
+<p>
+Premium Business Websites That Bring Customers.
+Modern Design • Fast Loading • WhatsApp Integration
+</p>
+
+<a class="btn" href="https://wa.me/918333847909">
+Chat on WhatsApp
+</a>
+</section>
+
+<section class="section">
 <h2>Our Services</h2>
 
 <div class="card">
 <h3>Business Websites</h3>
-<p>Modern websites for your business.</p>
+<p>Professional websites for local businesses.</p>
 </div>
 
 <div class="card">
 <h3>E-Commerce Stores</h3>
-<p>Online shopping websites with payments.</p>
+<p>Online stores with payment integration.</p>
 </div>
 
 <div class="card">
 <h3>Digital Marketing</h3>
 <p>Grow your business online.</p>
 </div>
+</section>
+
+<section class="section">
+<h2>Pricing</h2>
+
+<div class="card">
+<div class="price">₹7999</div>
+<p>Starter Website</p>
 </div>
 
-<div class="footer">
-<h2>Contact Us</h2>
-<p>WhatsApp: 8333847909</p>
+<div class="card">
+<div class="price">₹8999</div>
+<p>Business Website</p>
 </div>
+
+<div class="card">
+<div class="price">₹9999</div>
+<p>Premium Website</p>
+</div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/918333847909">
+WhatsApp
+</a>
 
 </body>
 </html>
