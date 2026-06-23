@@ -1,131 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>HariHara Digital</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
 body{
-margin:0;
-font-family:Arial,sans-serif;
 background:#050505;
+font-family:'Poppins',sans-serif;
 color:white;
-text-align:center;
+overflow-x:hidden;
 }
+
+/* LOGO INTRO */
+
+.logo-screen{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100vh;
+background:#000;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:9999;
+animation:hideLogo 3s forwards;
+}
+
+.logo{
+font-family:'Orbitron',sans-serif;
+font-size:60px;
+font-weight:900;
+background:linear-gradient(90deg,#ff5f6d,#ffc371);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+text-shadow:0 0 25px #ff00ff;
+animation:zoomIn 2s ease;
+}
+
+.logo-sub{
+font-size:22px;
+letter-spacing:8px;
+margin-top:10px;
+color:#fff;
+}
+
+@keyframes zoomIn{
+0%{transform:scale(.3);opacity:0;}
+100%{transform:scale(1);opacity:1;}
+}
+
+@keyframes hideLogo{
+0%,80%{
+opacity:1;
+visibility:visible;
+}
+100%{
+opacity:0;
+visibility:hidden;
+}
+}
+
+/* HERO */
+
 .hero{
-padding:80px 20px;
-background:linear-gradient(135deg,#120018,#8b00ff);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+background:
+radial-gradient(circle at top right,#7f00ff,#050505 55%);
 }
-h1{
-font-size:48px;
-margin:0;
+
+.hero h1{
+font-size:58px;
+font-family:'Orbitron',sans-serif;
+font-weight:900;
+line-height:1.1;
 }
-h1 span{
-color:#ff66ff;
+
+.hero h1 span{
+color:#ff4dff;
+text-shadow:0 0 20px #ff00ff;
 }
+
+.hero p{
+margin-top:20px;
+font-size:20px;
+color:#d7d7d7;
+line-height:1.8;
+}
+
 .btn{
 display:inline-block;
-margin-top:20px;
-padding:15px 30px;
-background:#d000ff;
+margin-top:35px;
+padding:18px 40px;
+border-radius:60px;
+background:linear-gradient(90deg,#ff00ff,#8a2be2);
 color:white;
 text-decoration:none;
-border-radius:30px;
-font-weight:bold;
+font-weight:700;
+font-size:18px;
+box-shadow:0 0 25px #ff00ff;
+animation:pulse 2s infinite;
 }
-.section{
-padding:40px 20px;
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.08);}
+100%{transform:scale(1);}
 }
-.card{
-background:#111;
-border:1px solid #8b00ff;
-border-radius:20px;
-padding:25px;
-margin:15px;
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin:80px 0 30px;
+font-family:'Orbitron',sans-serif;
 }
-.price{
-font-size:50px;
-color:#ff66ff;
-font-weight:bold;
-}
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#00d95f;
-color:white;
-padding:15px 20px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-}
+
 </style>
 </head>
+
 <body>
 
-<div class="hero">
-<h1>HariHara <span>Digital</span></h1>
-<p>Premium Websites That Grow Your Business</p>
-<a class="btn" href="https://wa.me/918333847909">Chat on WhatsApp</a>
+<div class="logo-screen">
+<div class="logo">HH</div>
+<div class="logo-sub">HARIHARA DIGITAL</div>
 </div>
 
-<div class="section">
-<h2>Why Choose Us</h2>
+<section class="hero">
 
-<div class="card">
-<h2>500+</h2>
-<p>Projects Completed</p>
+<div>
+
+<h1>
+Build Websites That
+<span>Grow</span>
+Businesses
+</h1>
+
+<p>
+Premium websites, landing pages and digital solutions
+that attract customers and increase sales.
+</p>
+
+<a class="btn" href="https://wa.me/919609999666">
+Chat on WhatsApp
+</a>
+
 </div>
 
-<div class="card">
-<h2>4.8★</h2>
-<p>Client Rating</p>
-</div>
-
-<div class="card">
-<h2>24/7</h2>
-<p>Support</p>
-</div>
-</div>
-
-<div class="section">
-<h2>Our Services</h2>
-
-<div class="card">
-<h3>Business Websites</h3>
-<p>Professional websites for businesses.</p>
-</div>
-
-<div class="card">
-<h3>E-Commerce Stores</h3>
-<p>Online stores with payment integration.</p>
-</div>
-
-<div class="card">
-<h3>Digital Marketing</h3>
-<p>Grow your business online.</p>
-</div>
-</div>
-
-<div class="section">
-<h2>Pricing</h2>
-
-<div class="card">
-<div class="price">₹7,999</div>
-<p>Starter Website</p>
-</div>
-
-<div class="card">
-<div class="price">₹8,999</div>
-<p>Business Website</p>
-</div>
-
-<div class="card">
-<div class="price">₹9,999</div>
-<p>Premium Website</p>
-</div>
-</div>
-
-<a class="whatsapp" href="https://wa.me/918333847909">WhatsApp</a>
-
-</body>
-</html>
+</section>
